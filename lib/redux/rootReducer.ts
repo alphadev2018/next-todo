@@ -1,6 +1,7 @@
 /* Instruments */
-import { counterSlice } from './slices'
+import { authSlice, todoSlice } from './slices'
 
 export const reducer = {
-  counter: counterSlice.reducer,
+  auth: authSlice.reducer,
+  todo: todoSlice.reducer,
 }

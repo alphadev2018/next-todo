@@ -38,7 +38,7 @@ export const useSelector: TypedUseSelectorHook<ReduxState> = useReduxSelector
 export type ReduxStore = typeof reduxStore
 export type ReduxState = ReturnType<typeof reduxStore.getState>
 export type ReduxDispatch = typeof reduxStore.dispatch
-export type ReduxThunkAction<ReturnType = void> = ThunkAction<
+export type ReduxThunkAction<ReturnType = any> = ThunkAction<
   ReturnType,
   ReduxState,
   unknown,
